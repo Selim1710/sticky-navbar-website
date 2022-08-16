@@ -9,13 +9,15 @@
   position: relative;
   height: 100vh;
   width: 100%;
-  background: url("/images/background.jpg");
+  background: linear-gradient(to bottom,#130f40,#30336b);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+/******************* navbar *******************/
 nav {
+  border: 2px solid red;
   width: 100%;
   padding: 5px 0;
   text-align: center;
@@ -60,4 +62,22 @@ nav ul li a:hover {
   justify-content: space-between;
   align-items: center;
   transition: 1s;
+}
+
+/******************* flights *******************/
+.flight .way{
+  display: flex;
+  text-transform: capitalize;
+}
+
+.flight .way .one-way{
+  margin-left: 2%;
+  margin-top: 1%;
+  font-size: 1.5rem;
+}
+
+/* second part */
+.column{
+  width:15%;
+  margin-left:1%;
 }

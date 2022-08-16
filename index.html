@@ -12,13 +12,88 @@
 <body>
     <div class="header">
         <nav id="navbar">
-            <div class="logo navbar-brand text-white">Make My Trip</div>
+            <div class="logo navbar-brand text-white">Make <span class="bg-danger font-italic rounded">My</span> Trip
+            </div>
             <ul id="menu">
-                <li><a href="#">home</a></li>
-                <li><a href="#">flight</a></li>
-                <li><a href="#">hotel</a></li>
+                <li><a href="#">flights</a></li>
+                <li><a href="#">hotels</a></li>
             </ul>
         </nav>
+        <div class="flight">
+            <div class="container" style="height:60vh;border: 2px solid red;background:white;border-radius: 10px;">
+                <!-- first part -->
+                <div class="way">
+                    <div class="one-way">
+                        <label for="c2">
+                            <input type="checkbox">
+                            One way
+                        </label>
+                    </div>
+                    <div class="one-way">
+                        <label for="c2">
+                            <input type="checkbox">
+                            round trip
+                        </label>
+                    </div>
+                    <div class="one-way">
+                        <label for="c3">
+                            <input type="checkbox">
+                            multiway way
+                        </label>
+                    </div>
+                    <div class="ml-auto mt-2">
+                        <a href="#">
+                            <p>Book International and Domestic Flights</p>
+                        </a>
+                    </div>
+                </div>
+                <!-- second part -->
+                <div class="container border rounded">
+                    <div class="row text-capitalize">
+                        <div class="column mt-3 mb-2">
+                            <label for="">From </label>
+                            <select name="" id="" class="form-control text-capitalize"
+                                style="font-size:1.3rem;z-index: 1000;">
+                                <option value="">Delhi</option>
+                                <option value="">Delhi</option>
+                            </select>
+                        </div>
+                        <div class="column mt-3 mb-2">
+                            <label for="">to</label>
+                            <select name="" id="" class="form-control text-capitalize" style="font-size:1.3rem;">
+                                <option value="">Delhi</option>
+                                <option value="">Delhi</option>
+                            </select>
+                        </div>
+                        <div class="column mt-3 mb-2">
+                            <label for="" class="form-control">DEPARTURE
+                                <input type="date">
+                            </label>
+                        </div>
+                        <div class="column mt-3 mb-2">
+                            <label for="" class="form-control"> RETURN <br>
+                                <input type="date">
+                            </label>
+                        </div>
+                        <div class="column mt-3 mb-2 text-center">
+                            <label for="">Travelers</label>
+                            <select name="" id="" class="form-control text-capitalize" style="font-size:1.3rem;">
+                                <option value="">infants</option>
+                                <option value="">child</option>
+                                <option value="">adult</option>
+                            </select>
+                        </div>
+                        <div class="column mt-3 mb-2 text-center">
+                            <label for="">Class</label>
+                            <select name="" id="" class="form-control text-capitalize" style="font-size:1.3rem;">
+                                <option value="">business</option>
+                                <option value="">economy</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="container">
