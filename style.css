@@ -2,14 +2,14 @@
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
-  /* border: 2px solid red; */
 }
 
 .header {
+  /* border: 2px solid red; */
   position: relative;
   height: 100vh;
   width: 100%;
-  background: linear-gradient(to bottom,#130f40,#30336b);
+  background: linear-gradient(to bottom, #130f40, #30336b);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -17,13 +17,14 @@
 
 /******************* navbar *******************/
 nav {
-  border: 2px solid red;
+  /* border: 2px solid red; */
   width: 100%;
   padding: 5px 0;
   text-align: center;
 }
 
 .logo {
+  /* border: 2px solid red; */
   height: 60px;
   width: 160px;
   margin: 5px 0;
@@ -54,6 +55,7 @@ nav ul li a:hover {
 }
 
 .sticky {
+  /* border: 2px solid red; */
   background-color: black;
   top: 0;
   left: 0;
@@ -65,19 +67,64 @@ nav ul li a:hover {
 }
 
 /******************* flights *******************/
-.flight .way{
+.flight .container {
+  /* border: 2px solid red; */
+  height: 60vh;
+  background: white;
+  border-radius: 10px;
+}
+
+.flight .way {
+  /* border: 2px solid red; */
   display: flex;
   text-transform: capitalize;
 }
 
-.flight .way .one-way{
+.flight .way .one-way {
+  /* border: 2px solid red; */
   margin-left: 2%;
   margin-top: 1%;
   font-size: 1.5rem;
 }
 
 /* second part */
-.column{
-  width:15%;
-  margin-left:1%;
+.column {
+  width: 15%;
+  margin-left: 1%;
+}
+
+/* third type */
+
+ .fare {
+  /* border: 2px solid red; */
+  display: flex;
+  text-transform: capitalize;
+}
+
+ .fare .fare-type {
+  /* border: 2px solid red; */
+  margin-left: 2%;
+  margin-top: 1%;
+}
+
+
+/******************* MOBILE DESIGN *******************/
+
+@media(max-width:768px) {
+  .header {
+    height: 150vh;
+  }
+
+  .flight .container {
+    height: 130vh;
+  }
+
+  .flight .way {
+    display: inline-block;
+  }
+
+  .column {
+    width: 99%;
+    margin-left: 1%;
+  }
 }
