@@ -17,10 +17,11 @@
 
 /******************* navbar *******************/
 nav {
-  /* border: 2px solid red; */
   width: 100%;
   padding: 5px 0;
   text-align: center;
+  display: flex;
+  z-index: 999;
 }
 
 .logo {
@@ -55,14 +56,9 @@ nav ul li a:hover {
 }
 
 .sticky {
-  /* border: 2px solid red; */
   background-color: black;
   top: 0;
-  left: 0;
   position: fixed;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   transition: 1s;
 }
 
@@ -107,6 +103,27 @@ nav ul li a:hover {
   margin-top: 1%;
 }
 /*********************************** index-2 ***********************************/
+/******************* flight-2 *******************/
+.flight-2 .container {
+  /* border: 2px solid red; */
+  height: 50vh;
+  background: white;
+  border-radius: 10px;
+}
+
+.flight-2 .way {
+  /* border: 2px solid red; */
+  display: flex;
+  text-transform: capitalize;
+}
+
+.flight-2 .way .one-way {
+  /* border: 2px solid red; */
+  margin-left: 2%;
+  margin-top: 1%;
+  font-size: 1.5rem;
+}
+
 /* filter */
 .filter-result{
   display: inline-block;
