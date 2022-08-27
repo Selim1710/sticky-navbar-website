@@ -16,11 +16,11 @@
 
 /******************* navbar *******************/
 nav {
-  color:white;
-  background-color: #0097e6;
+  color: white;
   width: 100%;
   padding: 5px 0;
   text-align: center;
+  z-index: 999;
 }
 
 .logo {
@@ -45,7 +45,7 @@ nav ul li {
 nav ul li a {
   color: white;
   font-weight: bold;
-  text-transform: capitalize;
+  text-transform: uppercase;
   font-weight: bold;
 }
 
@@ -53,6 +53,14 @@ nav ul li a:hover {
   color: #b8e994;
   text-decoration: none;
 }
+
+/* .sub-menu{
+  display: none;
+}
+
+#menu li:last-child:hover .sub-menu{
+display: block;
+} */
 
 .sticky {
   background-color: black;
@@ -101,12 +109,14 @@ nav ul li a:hover {
 
 /*********************************** index-2 ***********************************/
 
-#navbar a{
+#navbar a {
   color: white;
 }
-#navbar a:hover{
+
+#navbar a:hover {
   text-decoration: none;
 }
+
 /**** flight-2 ****/
 .flight-2 .container {
   height: 26vh;
@@ -166,6 +176,40 @@ nav ul li a:hover {
   display: inline-block;
   width: 100%;
 }
+
+/*********************************** login ***********************************/
+.login_form {
+  color: black;
+  background-color: white;
+}
+
+.sign_in_with {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.divider:after,
+.divider:before {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #eee;
+}
+
+.h-custom {
+  height: calc(100% - 73px);
+}
+
+@media (max-width: 450px) {
+  .h-custom {
+    height: 100%;
+  }
+}
+
+/*********************************** registration ***********************************/
+
 
 
 /******************* MOBILE DESIGN *******************/
